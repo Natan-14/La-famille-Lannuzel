@@ -1,0 +1,25 @@
+section{
+    text-align: center;
+}
+section img {
+    border: solid 5px white;
+    height: 500px;
+}
+section #contact {
+    background-color: white;
+    border-radius: 4px;
+    text-decoration: none;
+    color: black;
+    padding: 10px 12px;
+    text-transform: uppercase;
+
+}
+section p{
+    color: blanchedalmond;
+    line-height: 1.5en;
+    margin: 20px auto 0;
+    max-width: 500px;
+}
+section p1{
+    text-transform: uppercase;
+}

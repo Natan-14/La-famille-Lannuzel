@@ -1,0 +1,72 @@
+
+header, footer{
+    background-color: #333333;
+    color: white;
+    padding: 0 20px;
+} 
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+header ul li{
+    display: inline-block;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-style: none;
+
+}
+header h1 a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+}
+header ul li a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+
+}
+footer{
+    color: rgba(255, 255, 255, 0.5);
+    padding: 5em 0em;
+    text-align: center;
+}
+footer a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+}
+section{
+    background-color:  #009e2d;
+    border:solid 1px #333333;
+    color: white;
+    padding: 20px;
+}
+section{
+    text-align: center;
+}
+section img {
+    border: solid 5px white;
+    height: 500px;
+}
+section #contact {
+    background-color: white;
+    border-radius: 4px;
+    text-decoration: none;
+    color: black;
+    padding: 10px 12px;
+    text-transform: uppercase;
+
+}
+section p{
+    color: blanchedalmond;
+    line-height: 1.5en;
+    margin: 20px auto 0;
+    max-width: 500px;
+}
+section p1{
+    text-transform: uppercase;
+}
