@@ -1,34 +1,93 @@
-
 header, footer{
     background-color: #333333;
     color: white;
-    padding: 0 20px;
-} 
+    padding: 20px 20px;
+}
+
 header{
+    background-color: #333333;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-header ul{
-    margin: 0;
-    padding: 0;
-    list-style: none;
+header nav{
+    align-items: center;
+    width: 79%;
+    position: sticky;
+    
+    
 }
-header ul li{
-    display: inline-block;
-    padding: 10px 15px;
-    cursor: pointer;
-    font-style: none;
-
+header{
+    padding-left: 20px;
 }
 header h1 a {
     text-decoration: none;
     color: rgba(255, 255, 255, 0.8);
 }
-header ul li a{
-    text-decoration: none;
-    color: rgba(255, 255, 255, 0.8);
+header a img{
+    height: 50px;
+}
+header nav ul{
+    list-style-type: none;
+}
 
+header nav ul li{
+    float: right;
+    width: 15%;
+    text-align: center;
+    position: relative;
+}
+
+header nav ul::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+header nav a{
+    display: block;
+    text-decoration: none;
+    color:white;
+    border-bottom: 2px solid transparent;
+    padding: 10px 0px;
+}
+
+header nav a:hover{
+    color: rgb(0, 195, 255);
+    border-bottom: 2px solid rgb(128, 192, 173);
+}
+
+header nav ul ul li a {
+    color:#333333;
+}
+.sous{
+    display: none;
+    box-shadow: 0px 1px 2px #CCC;
+    background-color: white;
+    color: black;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+}
+header nav > ul li:hover .sous{
+    display: block;
+}
+.sous li{
+    float: none;
+    width: 100%;
+    text-align: left;
+}
+.sous a{
+    padding: 10px;
+    border-bottom: none;
+}
+.sous a:hover{
+    border-bottom: none;
+    background-color: RGBa(200,200,200,0.1);
+}
+.deroulant > a::after{
+    content:" ▼";
+    font-size: 12px;
 }
 footer{
     color: rgba(255, 255, 255, 0.5);
@@ -37,17 +96,43 @@ footer{
 }
 footer a {
     text-decoration: none;
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, 0.8);;
 }
 section{
-    background-color:  #009e2d;
+    background-color:  rgb(128, 192, 173);
     border:solid 1px #333333;
-    color: white;
+    color: black;
     padding: 20px;
-}
-section{
     text-align: center;
 }
+.zoom {
+    padding-left: 350px;
+    width: 320px;
+    height: 240px;
+    }
+    .image {
+    
+    width: 100%;
+    height: 100%;
+    }
+    .image img {
+    
+    /* La transition s'applique à la fois sur la largeur et la hauteur, avec une durée d'une seconde. */
+    -webkit-transition: all 1s ease; /* Safari et Chrome */
+    -moz-transition: all 1s ease; /* Firefox */
+    -ms-transition: all 1s ease; /* Internet Explorer 9 */
+    -o-transition: all 1s ease; /* Opera */
+    transition: all 1s ease;
+    }
+    .image:hover img {
+    /* L'image est grossie de 10% */
+    -webkit-transform:scale(1.10); /* Safari et Chrome */
+    -moz-transform:scale(1.10); /* Firefox */
+    -ms-transform:scale(1.10); /* Internet Explorer 9 */
+    -o-transform:scale(1.10); /* Opera */
+    transform:scale(1.10);
+    }
+
 section img {
     border: solid 5px white;
     height: 500px;
@@ -62,7 +147,7 @@ section #contact {
 
 }
 section p{
-    color: blanchedalmond;
+    color: #333333;
     line-height: 1.5en;
     margin: 20px auto 0;
     max-width: 500px;
@@ -70,3 +155,5 @@ section p{
 section p1{
     text-transform: uppercase;
 }
+
+
